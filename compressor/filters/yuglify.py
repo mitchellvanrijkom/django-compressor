@@ -7,7 +7,6 @@ class YUglifyFilter(CompilerFilter):
 
     def __init__(self, *args, **kwargs):
         super(YUglifyFilter, self).__init__(*args, **kwargs)
-        self.command += ' --type=%s' % self.type
 
 
 class YUglifyCSSFilter(YUglifyFilter):
